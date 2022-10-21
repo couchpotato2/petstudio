@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Fashion Pet</title>
+</head>
+<body>
+    <header class="container">
+        <h1 class="display-1">The Fashion Pet</h1>
+
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="register.html">Register</a>
+            </li>
+        </ul>
+    </header>
+      <main class="container">
+        <h2>Register</h2>
+        <p id="numberOfPets" class="alert alert-dark">Display the number of pets</p>
+        <!-- here we will add the input fields-->
+        <div>
+            <div class="mb-3">
+                <label class="form-label">Name:</label>
+                <input class="form-control" type="text" placeholder="Enter pets name" id="txtName">
+            </div>
+            <div class="mb-3">
+                <label>Age:</label>
+                <input class="form-control" type="number" id="txtAge">
+            </div>
+            <div class="mb-3">
+                <label>Gender:</label>
+                <input class="form-control" type="text" id="txtGender" >
+            </div>
+            <div class="mb-3">
+                <label>Breed:</label>
+                <input class="form-control" type="text" id="txtBreed" >
+            </div>
+
+            <div class="mb-3">
+                <label>Service:</label>
+                <select class="form-select" id="selService">
+                    <option value="" disabled selected> --- Select an option --- </option>
+                    <option value="gromming">Grooming 🚿</option>
+                    <option value="vaccine">Vaccine 💉</option>
+                    <option value="nails">Nails 💅</option>
+                </select>
+            </div>
+
+
+            <button class="btn btn-dark" onclick="register();">Register</button>
+        </div>
+        <div id="pets">
+             <!-- pets cards-->
+        </div>
+        <!-- table tables-->
+        <table>
+            <thead>
+                <!-- add the headers-->
+            </thead>
+            <tbody id="petsTable">
+                <!--add the pets-->
+            </tbody>
+        </table>
+        
+      </main>
+      <script src="display.js"></script>
+      <script src="register.js"></script>
+</body>
+</html>
